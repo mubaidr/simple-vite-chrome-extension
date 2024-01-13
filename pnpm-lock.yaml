@@ -36,8 +36,8 @@ devDependencies:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.33)
   chrome-types:
-    specifier: ^0.1.249
-    version: 0.1.249
+    specifier: ^0.1.250
+    version: 0.1.250
   daisyui:
     specifier: ^4.6.0
     version: 4.6.0(postcss@8.4.33)
@@ -51,11 +51,11 @@ devDependencies:
     specifier: ^8.4.33
     version: 8.4.33
   prettier:
-    specifier: ^3.2.0
-    version: 3.2.0
+    specifier: ^3.2.1
+    version: 3.2.1
   prettier-plugin-tailwindcss:
     specifier: ^0.5.11
-    version: 0.5.11(prettier@3.2.0)
+    version: 0.5.11(prettier@3.2.1)
   sass:
     specifier: ^1.69.7
     version: 1.69.7
@@ -975,8 +975,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /chrome-types@0.1.249:
-    resolution: {integrity: sha512-rTf3f9dLref2I8SN0D8lGt1LqXEMaX4KckhcznzmMryvxP8d8XrvB9pF7e7gWJwnB64N9TlX6F4nza7sn1ZWRw==}
+  /chrome-types@0.1.250:
+    resolution: {integrity: sha512-4lV7LZXYafAcTKAPkNYnhShsFIMzWmscXcxk7VqbTwJ/sxnWID+NhgwGO8ig8S8iq/7QEN+BC5FZXaTn5aCVyA==}
     dev: true
 
   /color-convert@2.0.1:
@@ -2062,7 +2062,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss@0.5.11(prettier@3.2.0):
+  /prettier-plugin-tailwindcss@0.5.11(prettier@3.2.1):
     resolution: {integrity: sha512-AvI/DNyMctyyxGOjyePgi/gqj5hJYClZ1avtQvLlqMT3uDZkRbi4HhGUpok3DRzv9z7Lti85Kdj3s3/1CeNI0w==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -2111,11 +2111,11 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      prettier: 3.2.0
+      prettier: 3.2.1
     dev: true
 
-  /prettier@3.2.0:
-    resolution: {integrity: sha512-/vBUecTGaPlRVwyZVROVC58bYIScqaoEJzZmzQXXrZOzqn0TwWz0EnOozOlFO/YAImRnb7XsKpTCd3m1SjS2Ww==}
+  /prettier@3.2.1:
+    resolution: {integrity: sha512-qSUWshj1IobVbKc226Gw2pync27t0Kf0EdufZa9j7uBSJay1CC+B3K5lAAZoqgX3ASiKuWsk6OmzKRetXNObWg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true

@@ -1,11 +1,10 @@
 import { crx } from '@crxjs/vite-plugin'
 import { dirname, relative } from 'path'
-import AutoImport from 'unplugin-auto-import/vite'
-import Icons from 'unplugin-icons/vite'
 import { URL, fileURLToPath } from 'url'
 import { defineConfig, type Plugin } from 'vite'
 import manifest from './manifest.config'
 import packageJson from './package.json'
+
 const transformHtmlPlugin = (data) =>
   <Plugin>{
     name: 'transform-html',
@@ -28,19 +27,6 @@ export default defineConfig({
   },
   plugins: [
     crx({ manifest }),
-
-    AutoImport({
-      imports: [],
-      dts: 'src/auto-imports.d.ts',
-      dirs: ['src/composables/'],
-    }),
-
-    // https://github.com/antfu/unplugin-icons
-    Icons({
-      autoInstall: true,
-      compiler: 'raw',
-      scale: 1.5,
-    }),
 
     // rewrite assets to use relative path
     {

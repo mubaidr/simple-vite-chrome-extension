@@ -1,8 +1,8 @@
-# vite-chrome-extension
+# simple-vite-chrome-extension
 
-[![build](https://github.com/mubaidr/vite-chrome-extension/actions/workflows/build.yml/badge.svg)](https://github.com/mubaidr/vite-chrome-extension/actions/workflows/build.yml) [![release](https://github.com/mubaidr/vite-chrome-extension/actions/workflows/release.yml/badge.svg)](https://github.com/mubaidr/vite-chrome-extension/actions/workflows/release.yml)
+[![build](https://github.com/mubaidr/simple-vite-chrome-extension/actions/workflows/build.yml/badge.svg)](https://github.com/mubaidr/simple-vite-chrome-extension/actions/workflows/build.yml) [![release](https://github.com/mubaidr/simple-vite-chrome-extension/actions/workflows/release.yml/badge.svg)](https://github.com/mubaidr/simple-vite-chrome-extension/actions/workflows/release.yml)
 
-A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.chrome.com/docs/extensions/reference/), [FireFox](https://addons.mozilla.org/en-US/developers/), etc.) starter template based on `manifest 3`, `Tailwind`, `daisyUI`.
+A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.chrome.com/docs/extensions/reference/), [FireFox](https://addons.mozilla.org/en-US/developers/), etc.) starter template based on `manifest 3`.
 
 **Please check: [vite-vue3-chrome-extension-v3](https://github.com/mubaidr/vite-vue3-chrome-extension-v3) for a more advance template based on Vuejs**
 
@@ -10,11 +10,7 @@ A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.c
 
 - HMR for extension pages and content scripts
 - Sample `onInstall` & `onUpdate` pages
-- [`Tailwind`](https://tailwindcss.com/) css And [`daisyUI`](https://daisyui.com/)
-- Tailwindcss plugins for Typography, forms, prettier and daisy ui
 - vscode recommended settings and extensions for chrome plugin development
-- [Icons](./src/components) - Access to icons from any iconset directly
-  - By default [Material Design Icons](https://materialdesignicons.com/cdn/1.6.50-dev/) set is enabled
 - [TypeScript](https://www.typescriptlang.org/) - type safe
 - `Eslint` & `Prettier` configured for `javascript`, `TypeScript`
 - [CRXJS Vite Plugin](https://crxjs.dev/vite-plugin) Build a Chrome Extension with Vite
@@ -24,24 +20,11 @@ _Please create an issue if you feel some feature is missing or could be improved
 
 ## Pre-packed
 
-### Vite Plugins
-
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import)
-- [`unplugin-icons`](https://github.com/antfu/unplugin-icons) - icons as components
-  - [Material Design Icons](https://icon-sets.iconify.design/mdi/) - Material Design Icons
-
-### UI Frameworks
-
-- [tailwindcss](https://tailwindcss.com) - A utility-first CSS framework
-- [daisyUI](https://daisyui.com/) - The most popular component library for Tailwind CSS
-
-Tailwind css `forms` and `typography` plugins are enabled for default styling of form controls.
-
 ## Use the Template
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/mubaidr/vite-chrome-extension/generate).
+[Create a repo from this template on GitHub](https://github.com/mubaidr/simple-vite-chrome-extension/generate).
 
 ### Clone to local
 
@@ -50,7 +33,7 @@ If you prefer to do it manually with the cleaner git history
 > If you don't have pnpm installed, run: npm install -g pnpm
 
 ```bash
-pnpx degit mubaidr/vite-chrome-extension my-webext
+pnpx degit mubaidr/simple-vite-chrome-extension my-webext
 cd my-webext
 pnpm i
 ```
@@ -77,8 +60,6 @@ pnpm i
 ### Extra info
 
 In [src/background/index.ts](./src/background/index.ts) you can find an example of chrome.runtime.onInstalled.addListener.
-
-We add `?type` to the url to tell if it's update or install event. Then in [src/setup/pages/index.ts](./src/setup/pages/index.ts) we check for the `type` and show the appropriate page.
 
 ### Development
 
