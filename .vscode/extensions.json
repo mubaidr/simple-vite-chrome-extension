@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "antfu.vite",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "mrniamster.daisyui-snippets",
+    "oxc.oxc-vscode",
+    "mrmlnc.vscode-scss",
+    "csstools.postcss"
+  ]
+}

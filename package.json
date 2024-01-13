@@ -1,0 +1,58 @@
+{
+  "dependencies": {},
+  "description": "A Vite project for building Chrome extensions",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.22",
+    "@iconify-json/mdi": "^1.1.64",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/eslint": "^8.56.2",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "autoprefixer": "^10.4.16",
+    "chrome-types": "^0.1.249",
+    "daisyui": "^4.6.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.33",
+    "prettier": "^3.2.0",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "sass": "^1.69.7",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "unplugin-auto-import": "^0.17.3",
+    "unplugin-icons": "^0.18.2",
+    "vite": "^5.0.11"
+  },
+  "displayName": "Vite Chrome Extension Boilerplate",
+  "name": "vite-chrome-extension",
+  "overrides": {
+    "@crxjs/vite-plugin": "$@crxjs/vite-plugin"
+  },
+  "pnpm": {
+    "overrides": {},
+    "peerDependencyRules": {
+      "allowAny": [],
+      "allowedDeprecatedVersions": {
+        "sourcemap-codec": "1.4.8"
+      },
+      "allowedVersions": {},
+      "ignoreMissing": []
+    }
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mubaidr/vite-chrome-extension"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "eslint . --fix --ext js,mjs,cjs,ts,mts,cts",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "version": "0.0.1"
+}
